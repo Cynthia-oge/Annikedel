@@ -1,0 +1,148 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "poppin", sans-serif;
+    font-size: 18px;
+    width: 100%;
+    /* font-family: Georgia, 'Times New Roman'; */
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5em;
+    width: 100%;
+}
+
+header ul{
+    display: none;
+}
+
+.open-menu{
+    /* margin-top: 4em; */
+    /* margin-left: 26em; */
+    padding: 2em;
+    position: relative;
+    left: 3em;
+    width: 10%;
+}
+
+header img{
+    width: 10%;
+    height: 45%;
+    padding: 1.5em;
+    margin-left: 2em;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    border-right: solid red;
+    border-left: solid red;
+}
+
+.container p{
+    padding: 0.5em 2em;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #212529;
+    font-weight: lighter;
+}
+
+.container h2{
+    padding-top: 2em;
+    padding-left: 1em;
+}
+
+footer{
+    background-color: #101035;
+    color: #fff;
+    padding: 2em 3em;
+    text-align: center;
+}
+
+.footer-div{
+    /* #1c579e */
+   width: 80%;
+}
+
+.question{
+    font-size: 1.3rem;
+}
+
+.social-media img{
+    width: 10%;
+    padding: 0.3em;
+}
+
+.enquiry, .more-info{
+    font-size: 0.8rem;
+}
+
+@media all and (min-width: 1000px){
+    header{
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+     .open-menu{
+        display: none;
+    }
+
+    header ul{
+        /* width: 55%; */
+        display: flex;
+        align-items: flex-start;     
+        flex-wrap: nowrap;
+        background: none;
+        margin-top: 2em;
+    }
+
+    header ul li{
+        order: 2;
+        position: relative;
+        display: block; 
+        width: auto;
+    }
+
+    header ul li a{
+        color: #101035;
+        padding: 1em;
+        text-decoration: none;
+    }
+
+    header img{
+        height: 50%;
+    }
+
+    .container{
+        width: 50%;
+    }
+
+    .flex-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+   .social-media img{
+    width: 20%;
+    padding: 0.3em;
+}
+
+.more-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more-info p{
+    /* padding-left: 5em; */
+    margin-left: 5em;
+}
+}
+
+
+

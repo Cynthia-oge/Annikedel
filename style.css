@@ -1,0 +1,201 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "poppin", sans-serif;
+    font-size: 18px;
+    width: 100%;
+    /* font-family: Georgia, 'Times New Roman'; */
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5em;
+    width: 100%;
+}
+
+header ul{
+    display: none;
+}
+
+.open-menu{
+    /* margin-top: 4em; */
+    /* margin-left: 26em; */
+    padding: 2em;
+    position: relative;
+    left: 3em;
+    width: 10%;
+}
+
+header img{
+    width: 10%;
+    height: 45%;
+    padding: 1.5em;
+    margin-left: 2em;
+}
+
+.header-div{
+    background-image:url("./images/pexels-fauxels-3184292.e41d01b986ed494e0f82.jpg");
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+   position: relative;
+}
+ 
+.overlay-div{
+    position: absolute;
+    background-color: rgba(43,108,176,.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.prev-btn,
+.next-btn {
+  color: #FAF7EB;
+  font-size: 3rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: hsl(205, 78%, 60%);
+}
+
+.prev-btn{
+    position: relative;
+    top: 300px;
+}
+
+.next-btn{
+    position: relative;
+    top: 300px;
+    left: 6em;
+}
+
+.company-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.company-info h2{
+    font-size: 1.3em;
+    line-height: 1.5em;
+    color: #101035;
+}
+
+.company-container p{
+    font-size: 1em;
+    color: #212529;
+    line-height: 1.5em;
+}
+
+footer{
+    background-color: #101035;
+    color: #fff;
+    padding: 2em 3em;
+    text-align: center;
+}
+
+.footer-div{
+    /* #1c579e */
+   width: 80%;
+}
+
+.question{
+    font-size: 1.3rem;
+}
+
+.social-media img{
+    width: 10%;
+    padding: 0.3em;
+}
+
+.enquiry, .more-info{
+    font-size: 0.8rem;
+}
+
+.slide{
+    position: relative;
+    top: 250px;
+    left: 9em;
+}
+
+@media all and (min-width: 1000px){
+    header{
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+     .open-menu{
+        display: none;
+    }
+
+    header ul{
+        /* width: 55%; */
+        display: flex;
+        align-items: flex-start;     
+        flex-wrap: nowrap;
+        background: none;
+        margin-top: 2em;
+    }
+
+    header ul li{
+        order: 2;
+        position: relative;
+        display: block; 
+        width: auto;
+    }
+
+    header ul li a{
+        color: #101035;
+        padding: 1em;
+        text-decoration: none;
+    }
+
+    header img{
+        height: 50%;
+    }
+
+    .company-container{
+        display: flex;
+    }
+
+    .flex-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+.prev-btn{
+    left: 2em;
+}
+
+.next-btn{
+    left: 15em;
+}
+
+    .social-media img{
+    width: 20%;
+    padding: 0.3em;
+}
+
+.more-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more-info p{
+    /* padding-left: 5em; */
+    margin-left: 5em;
+}
+}
